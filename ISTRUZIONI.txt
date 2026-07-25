@@ -1,0 +1,22 @@
+K9 CREATIVE STUDIO — RELEASE 2.4
+FIX STRUTTURALE LOCANDINE
+
+Sostituisci su GitHub:
+- index.html
+- sw.js
+
+CORREZIONI STRUTTURALI
+- Eliminata la doppia CTA: ogni locandina mostra un solo pulsante.
+- Separazione dinamica tra titolo/descrizione e pannello informativo.
+- Il pannello parte sotto il contenuto realmente occupato.
+- Titoli, sottotitoli ed elenchi non possono invadere il pannello.
+- Le sezioni interne rispettano limiti verticali e non si sovrappongono.
+- Fascia inferiore riservata a CTA, data e sede.
+- Testi troppo lunghi vengono ridotti o troncati senza rompere il layout.
+- Conservati CTA attiva, PDF cliccabile, loghi liberi e controlli Android.
+
+DOPO IL COMMIT
+1. Attendi il deploy GitHub Pages.
+2. Chiudi completamente la PWA.
+3. Riaprila e premi Aggiorna.
+4. Rigenera il progetto per applicare la nuova impaginazione.
