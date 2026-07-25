@@ -1,0 +1,24 @@
+K9 CREATIVE STUDIO — RELEASE 2.0 STABILE
+
+Sostituisci su GitHub:
+- index.html
+- sw.js
+
+La release conserva:
+- 100 stili grafici
+- modalità automatica, chiara e scura
+- due loghi indipendenti
+- rimozione sfondo e PNG
+- spostamento manuale
+- profili coerenti per Dogsitter e gli altri servizi
+- Centro pubblicazione social
+- archivio, JSON ed esportazioni
+- PWA e funzionamento offline
+
+Correzioni di stabilità:
+- comando Adatta progetto e stile realmente presente
+- inizializzazione protetta dei controlli opzionali
+- diagnostica runtime visibile
+- cache PWA 2.0.0
+
+Dopo il commit attendi GitHub Pages, chiudi la PWA, riaprila e premi Aggiorna.
