@@ -1,0 +1,15 @@
+K9 CREATIVE STUDIO — CORREZIONE COERENZA PROGETTO / STILE
+
+Sostituisci su GitHub:
+- index.html
+- sw.js
+
+CORREZIONI
+- Selezionando Dogsitter vengono adattati anche stile, variante chiara/scura, tono, obiettivo e pubblico.
+- Vengono aggiornati vantaggi, organizzazione del servizio, destinatari, disponibilità, prezzo e contatto.
+- Le intestazioni diventano “Cosa comprende”, “Come funziona”, “Servizio indicato per”, non più contenuti da corso.
+- Sono stati creati profili coerenti per tutte le discipline e tutti i servizi.
+- È disponibile il pulsante “Adatta progetto e stile al servizio”.
+- I 100 stili, i due loghi, la PWA, il social publisher e tutte le esportazioni restano presenti.
+
+Dopo il commit attendi il deploy, chiudi la PWA e premi Aggiorna.
