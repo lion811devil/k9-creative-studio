@@ -1,0 +1,26 @@
+K9 CREATIVE STUDIO — FIX ANTEPRIMA NERA
+
+Sostituisci nella radice della repository GitHub:
+- index.html
+- sw.js
+
+ERRORE CORRETTO
+Il pannello informativo utilizzava le intestazioni specifiche del servizio
+senza inizializzare la variabile sectionLabels. Questo interrompeva il
+rendering e lasciava il Canvas completamente nero.
+
+FUNZIONI CONSERVATE
+- Coerenza automatica Dogsitter e altri servizi
+- 100 stili grafici
+- Modalità chiara, scura e automatica
+- Due loghi indipendenti
+- Logo sempre in primo piano
+- Rimozione sfondo protetta
+- Esportazioni e Centro social
+- PWA e archivio progetti
+
+Dopo il commit:
+1. Attendi il deploy GitHub Pages.
+2. Chiudi completamente la PWA.
+3. Riaprila e premi Aggiorna.
+4. Premi “Adatta progetto e stile al servizio”.
