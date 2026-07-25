@@ -1,0 +1,14 @@
+K9 CREATIVE STUDIO — RIPRISTINO ANTEPRIMA E LOGO IN PRIMO PIANO
+
+Sostituisci su GitHub soltanto:
+- index.html
+- sw.js
+
+Correzione:
+- risolto l’errore JavaScript che rendeva nera l’anteprima;
+- logo caricato normalmente;
+- logo disegnato una sola volta in primo piano;
+- testi e logo restano sopra gli elementi grafici;
+- nessuna altra funzione rimossa.
+
+Dopo il commit attendi GitHub Pages, poi riapri la PWA e premi Aggiorna.
