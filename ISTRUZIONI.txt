@@ -1,0 +1,11 @@
+K9 CREATIVE STUDIO — CORREZIONE DOPPIO LOGO
+
+Nella radice della repository GitHub sostituisci soltanto:
+1. index.html
+2. sw.js
+
+La correzione elimina il secondo logo generato dal pannello informativo esteso.
+Il logo previsto dal tema grafico rimane regolarmente visibile.
+
+Dopo il commit attendi il deploy di GitHub Pages.
+Poi riapri la PWA e premi “Aggiorna” quando compare.
