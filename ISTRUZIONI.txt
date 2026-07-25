@@ -1,0 +1,16 @@
+K9 CREATIVE STUDIO — LOGO SEMPRE IN PRIMO PIANO
+
+Sostituisci nella radice della repository GitHub:
+- index.html
+- sw.js
+
+La modifica:
+- disegna il logo una sola volta;
+- lo porta sopra fotografie, overlay, pannelli, decorazioni e cornici;
+- conserva posizione e dimensione previste dal tema;
+- conserva lo spostamento manuale;
+- conserva la protezione di contrasto;
+- non reintroduce il doppio logo;
+- mantiene il caricamento immediato e la rimozione sfondo protetta.
+
+Dopo il commit attendi il deploy, riapri la PWA e premi “Aggiorna”.
