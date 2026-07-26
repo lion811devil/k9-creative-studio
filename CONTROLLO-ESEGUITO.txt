@@ -1,0 +1,10 @@
+CONTROLLI RELEASE 3.5
+
+- sintassi JavaScript inline: valida con Node.js --check;
+- sintassi service worker: valida con Node.js --check;
+- rimossa la trasformazione ctx.scale applicata all'intero pannello informativo;
+- aggiunti margini di sicurezza indipendenti dal formato;
+- corrette uscite anticipate della funzione senza stack Canvas sbilanciato;
+- tipografia del pannello limitata a un intervallo sicuro 0,88–1,14;
+- cache service worker aggiornata da 3.4.0 a 3.5.0;
+- pacchetto limitato ai soli file effettivamente modificati.
