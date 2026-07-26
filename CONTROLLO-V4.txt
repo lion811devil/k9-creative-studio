@@ -1,0 +1,26 @@
+K9 CREATIVE STUDIO 4.0 — CONTROLLO E MODIFICHE
+
+BASE: repository GitHub Pages fornita dall'utente.
+
+CORREZIONI/UPGRADE:
+- nuovo motore compositivo V4 richiamato da anteprima, esportazione immagini, PDF e Centro Social;
+- ricostruzione completa del layout dopo ogni cambio formato;
+- 8 famiglie compositive professionali realmente differenti, selezionate in modo deterministico dai temi;
+- tutti i campi compilati vengono convertiti in sezioni e inseriti nella locandina;
+- griglie adattive a 1, 2 o 3 colonne secondo il formato;
+- fit tipografico dinamico per titolo, sottotitolo, intestazioni e voci;
+- deduplicazione dei contenuti ripetuti;
+- CTA, località, contatti e loghi gestiti in aree protette;
+- service worker aggiornato alla cache 4.0.0;
+- compatibilità GitHub Pages mantenuta; nessun file Netlify.
+
+CONTROLLI ESEGUITI:
+- sintassi JavaScript index.html con Node.js: superata;
+- sintassi service worker con Node.js: superata;
+- manifest JSON: valido;
+- 161 riferimenti/ID DOM: nessun ID duplicato e nessun riferimento mancante;
+- icone dichiarate nel manifest: presenti;
+- verifica chiamate renderer: anteprima, export e social usano il motore V4.
+
+NOTA DI TRASPARENZA:
+L'ambiente ha impedito l'avvio di Chromium tramite policy amministrativa; non viene quindi dichiarato un test visivo headless completo. I controlli statici e di sintassi sopra elencati sono stati eseguiti realmente.
