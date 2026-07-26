@@ -1,0 +1,40 @@
+K9 CREATIVE STUDIO — RELEASE 6.0 MODULARE
+
+OBIETTIVO
+Separazione fisica del monolite Release 5.0 senza riscrivere la logica applicativa.
+
+STRUTTURA
+- index.html: solo struttura HTML
+- css/base.css: stile principale estratto integralmente
+- css/mobile-polish.css: correzioni responsive estratte integralmente
+- js/app.js: logica applicativa completa estratta integralmente
+- js/runtime-guard.js: gestione errori finale estratta integralmente
+- sw.js: cache PWA aggiornata e nuovi moduli inclusi
+- manifest.webmanifest e icons/: mantenuti
+
+GARANZIA DI COMPATIBILITÀ
+I blocchi CSS e JavaScript sono stati spostati senza alterarne contenuto e ordine di esecuzione. Questa strategia riduce il rischio di regressioni rispetto a una riscrittura funzionale.
+
+CONTROLLI ESEGUITI
+- estrazione esatta di 2 blocchi CSS e 2 blocchi JavaScript
+- sintassi JavaScript con Node.js
+- validità JSON del manifest
+- ricerca ID HTML duplicati
+- verifica riferimenti DOM statici
+- verifica presenza di tutti gli asset del service worker
+- confronto hash dei contenuti estratti con i blocchi originali normalizzati
+- integrità ZIP
+
+DIMENSIONI FILE
+- css/base.css: 25850 byte
+- css/mobile-polish.css: 8849 byte
+- icons/apple-touch-icon.png: 4748 byte
+- icons/icon-192.png: 5165 byte
+- icons/icon-512.png: 14551 byte
+- icons/icon-maskable-192.png: 5080 byte
+- icons/icon-maskable-512.png: 14363 byte
+- index.html: 35859 byte
+- js/app.js: 209616 byte
+- js/runtime-guard.js: 3757 byte
+- manifest.webmanifest: 1688 byte
+- sw.js: 1865 byte
