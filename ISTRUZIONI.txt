@@ -1,0 +1,24 @@
+K9 CREATIVE STUDIO — RELEASE 3.0 CONSOLIDATA
+
+SOSTITUISCI SU GITHUB:
+- index.html
+- sw.js
+
+CORREZIONI PRINCIPALI:
+- anteprima ripristinata;
+- fallback visibile in caso di errore, mai più riquadro nero senza spiegazione;
+- frecce tema inserite direttamente sopra l’anteprima;
+- nome e numero del tema visibili;
+- un solo sistema di spostamento e ridimensionamento;
+- eliminato il secondo pannello duplicato per i loghi;
+- logo principale e secondo logo gestiti dal menu unico “Elemento da spostare”;
+- data, luogo, orario, prezzo, posti, telefono, CTA e sezioni testuali vuote non compaiono;
+- eliminato il luogo predefinito;
+- versione e cache aggiornate alla 3.0.
+
+DOPO IL DEPLOY:
+1. Sostituisci index.html e sw.js.
+2. Attendi il completamento del deploy.
+3. Chiudi completamente la PWA.
+4. Riaprila e premi Aggiorna.
+5. Se resta una vecchia versione, elimina una volta i dati del sito/PWA e riaprila.
