@@ -1,0 +1,60 @@
+K9 CREATIVE STUDIO — RELEASE 3.4 GITHUB PAGES
+AUDIT TECNICO COMPLETO
+
+Ambiente verificato
+- Repository destinata esclusivamente a GitHub Pages.
+- Nessun file o riferimento Netlify incluso.
+- Percorsi PWA relativi alla cartella della repository.
+
+Errori reali individuati e corretti
+1. Blocco del renderer nei layout “Scheda tecnica” e “White academy”.
+   Causa: precedenza errata dell’operatore ternario nella condizione di un ciclo for del layout dataSheet.
+   Effetto: ciclo potenzialmente infinito e anteprima bloccata.
+   Correzione: condizioni racchiuse correttamente tra parentesi.
+
+2. Titolo rigenerato anche quando l’utente lo lasciava volontariamente vuoto.
+   Causa: projectData(false) sostituiva sempre il titolo vuoto.
+   Correzione: il titolo viene rigenerato soltanto quando viene richiesta esplicitamente la generazione automatica.
+
+3. Cache PWA ancora identificata come versione 3.1.0.
+   Effetto: possibilità di mantenere file precedenti dopo il caricamento della nuova release su GitHub Pages.
+   Correzione: CACHE_VERSION aggiornata a k9-creative-studio-v3.4.0.
+
+Controlli statici
+- Sintassi JavaScript dei due script inline: superata con Node.js 22.
+- Sintassi service worker: superata con Node.js 22.
+- Parsing HTML: completato.
+- 161 ID HTML controllati: nessun duplicato.
+- Riferimenti DOM tramite $() e getElementById(): nessun riferimento mancante.
+- Funzioni richiamate dall’interfaccia: nessuna funzione mancante rilevata.
+- Manifest JSON: valido.
+- Tutte le icone dichiarate nel manifest: presenti e leggibili.
+- Dimensioni icone 192×192 e 512×512: corrette.
+- Percorsi locali HTML/PWA: nessun asset mancante.
+
+Controlli runtime con Chromium headless
+- Avvio completo dell’app: nessun errore JavaScript.
+- Matrice ridimensionata: 28 formati × 100 temi = 2.800 rendering.
+- Canvas vuoti: 0.
+- Rendering falliti: 0.
+- Errori pagina/console: 0.
+- Test a dimensione reale e stress test con testi lunghi: 228 rendering aggiuntivi.
+- Rendering falliti nei test reali/stress: 0.
+- Cambio tema avanti/indietro: superato.
+- Conservazione volontaria del titolo vuoto: superata.
+- Adattamento Post Facebook: canvas 1200×630 corretto.
+- Generazione PNG dal canvas: superata.
+
+Totale rendering automatici eseguiti: 3.028.
+
+Limiti dichiarati
+- L’ambiente di audit non consente la pubblicazione effettiva su github.io; i percorsi, il manifest e il service worker sono stati verificati staticamente e in runtime locale controllato.
+- La qualità estetica soggettiva di ogni combinazione non può essere certificata da un solo controllo numerico; l’audit garantisce assenza di blocchi, eccezioni, canvas vuoti e asset mancanti nei test eseguiti.
+
+File da caricare su GitHub
+- index.html
+- manifest.webmanifest
+- sw.js
+- cartella icons
+
+AUDIT-COMPLETO.txt è documentazione e può essere omesso dalla pubblicazione.
