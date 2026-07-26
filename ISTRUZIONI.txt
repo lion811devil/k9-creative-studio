@@ -1,0 +1,17 @@
+K9 CREATIVE STUDIO — RELEASE 2.7
+CAMPI CONDIZIONALI
+
+Sostituisci:
+- index.html
+- sw.js
+
+COMPORTAMENTO
+- Campo vuoto = nessun riferimento in anteprima.
+- Data vuota = nessuna data.
+- Luogo vuoto = nessun luogo.
+- Prezzo, telefono, posti, orario e contatti vuoti non vengono mostrati.
+- CTA vuota = nessun pulsante.
+- Badge vuoto = nessun badge.
+- Descrizione vuota = nessun blocco descrizione.
+- Sezioni senza contenuto vengono eliminate.
+- Lo spazio viene redistribuito automaticamente.
