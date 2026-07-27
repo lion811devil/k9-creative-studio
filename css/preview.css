@@ -1,0 +1,5 @@
+/* Correzione professionale anteprima mobile e formati orizzontali */
+.canvas-wrap{min-height:0!important;padding:12px!important;overflow:hidden!important;align-content:center}
+.design-canvas{width:100%!important;height:auto!important;max-width:100%!important;max-height:none!important;display:block;margin:0 auto;border-radius:8px!important}
+@media(min-width:900px){.canvas-wrap{padding:18px!important}.design-canvas{width:auto!important;max-width:100%!important;max-height:78vh!important}}
+@media(max-width:640px){.preview-panel{padding:12px!important}.canvas-wrap{padding:8px!important;border-radius:16px!important}.preview-head{margin-bottom:10px!important}.format-pill{font-size:.78rem!important}.design-canvas{border-radius:6px!important}}
