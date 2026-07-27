@@ -1,0 +1,19 @@
+K9 CREATIVE STUDIO 2.2.0 — INTERFACCIA PRATICA
+
+Questa release usa la repository fornita come base e mantiene il motore grafico esistente.
+
+INTERFACCIA VISIBILE
+1. Grafica: formato, disciplina, modello, tema, foto, logo, colori, data e luogo.
+2. Testi: titolo, slogan, sottotitolo, descrizione, vantaggi, programma, destinatari e CTA.
+3. Esporta: salvataggio progetto, PNG, JPG e PDF.
+
+RIMOSSO DALLA NORMALE NAVIGAZIONE
+- tono principale, secondo tono e relativo mix;
+- Centro Social;
+- Brand Kit separato;
+- Asset Center separato;
+- regolazioni manuali complesse;
+- pannelli di riepilogo testuale ridondanti;
+- opzioni di esportazione secondarie.
+
+Le strutture tecniche necessarie alla compatibilità dei progetti precedenti restano nascoste nel DOM, evitando errori durante l'apertura di vecchi salvataggi.
