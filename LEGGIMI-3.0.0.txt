@@ -1,0 +1,19 @@
+K9 CREATIVE STUDIO 3.0.0
+
+Repository ricostruita in versione semplice e funzionale.
+
+Flusso operativo:
+1. scegli formato, modello e palette;
+2. carica foto e loghi;
+3. inserisci i testi;
+4. esporta PNG, JPG o PDF.
+
+La repository non usa più i vecchi moduli separati. I file necessari sono:
+- index.html
+- css/app.css
+- js/app.js
+- manifest.webmanifest
+- sw.js
+- cartella icons
+
+Per una sostituzione pulita della repository, elimina i vecchi file e carica il contenuto di questo ZIP.
