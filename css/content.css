@@ -1,5 +1,0 @@
-/* K9 Creative Studio 5.0 — contenuti estesi e leggibilità */
-.content-editor textarea{min-height:118px;line-height:1.5}.content-editor textarea[rows="6"]{min-height:150px}
-.content-editor .field-group{border:1px solid #2c333d;background:#0d1116;border-radius:13px;padding:11px;margin-bottom:11px}
-.content-editor .field-group-title{font-size:.76rem;font-weight:950;color:#ffc489;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
-.content-editor .hint strong{color:#f0f3f6}.content-quality-note{border-left:3px solid var(--accent);padding:9px 10px;background:rgba(255,122,0,.07);border-radius:0 9px 9px 0;color:#cbd1d8;font-size:.76rem;line-height:1.45;margin-bottom:12px}
