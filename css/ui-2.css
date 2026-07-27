@@ -1,0 +1,70 @@
+/* K9 Creative Studio 7.5 — Sprint 1: rifinitura interfaccia e correzioni UX */
+:root{--ui2-panel:#11161d;--ui2-panel-soft:#171d25;--ui2-border:rgba(255,255,255,.10);--ui2-shadow:0 18px 55px rgba(0,0,0,.34)}
+body.ui2-ready .hero{position:relative;overflow:hidden;padding:22px 24px;border:1px solid var(--ui2-border);border-radius:22px;background:linear-gradient(135deg,rgba(216,171,77,.12),rgba(255,255,255,.025) 48%,rgba(255,122,0,.055));box-shadow:var(--ui2-shadow)}
+body.ui2-ready .studio-tabs{gap:6px;padding:6px;border:1px solid var(--ui2-border);background:rgba(10,14,19,.92);backdrop-filter:blur(18px)}
+body.ui2-ready .studio-tab{border-radius:12px;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+body.ui2-ready .studio-tab:active{transform:scale(.97)}
+body.ui2-ready .workspace{align-items:start;gap:18px}
+body.ui2-ready .controls,body.ui2-ready .preview-panel{border:1px solid var(--ui2-border);box-shadow:var(--ui2-shadow)}
+body.ui2-ready .preview-panel{position:relative;background:linear-gradient(180deg,#11171e,#0b0f14)}
+.ui2-preview-actions{display:flex;align-items:center;gap:6px;margin-left:auto;flex-wrap:wrap;justify-content:flex-end}
+.ui2-preview-btn{min-width:40px;height:40px;padding:0 10px;border:1px solid var(--ui2-border);border-radius:11px;background:#171d25;color:#fff;font-weight:850;cursor:pointer;touch-action:manipulation}
+.ui2-preview-btn:hover{border-color:rgba(216,171,77,.42);background:#1d2530}
+.ui2-preview-btn:active{transform:scale(.95)}
+.ui2-preview-btn:focus-visible,.ui2-section-toggle:focus-visible,.ui2-return-preview:focus-visible{outline:2px solid #d8ab4d;outline-offset:2px}
+.ui2-zoom-value{min-width:52px;text-align:center;color:var(--muted);font-size:.75rem;font-weight:850}
+body.ui2-ready .canvas-wrap{overflow:auto!important;overscroll-behavior:contain;scrollbar-width:thin}
+body.ui2-ready #previewCanvas{transform-origin:top center;transition:width .18s ease;height:auto}
+.ui2-preview-fullscreen{position:fixed!important;inset:0!important;z-index:10050!important;width:100vw!important;height:100dvh!important;max-width:none!important;border-radius:0!important;margin:0!important;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom))!important;overflow:auto!important;background:#080b0f!important}
+.ui2-preview-fullscreen .canvas-wrap{min-height:calc(100dvh - 245px)!important;display:grid!important;place-items:start center!important}
+.ui2-preview-fullscreen .preview-head{position:sticky;top:0;z-index:4;background:#0c1117;padding:8px;border-radius:14px}
+.ui2-section-toggle{margin-left:auto;width:36px;height:34px;border:1px solid var(--ui2-border);border-radius:10px;background:#171d25;color:#fff;font-size:1.05rem;font-weight:900;cursor:pointer;flex:0 0 auto}
+body.ui2-ready .section-title{display:flex;align-items:center;gap:9px}
+.ui2-clickable-title{cursor:pointer;user-select:none;border-radius:10px}
+.ui2-clickable-title:focus-visible{outline:2px solid rgba(216,171,77,.75);outline-offset:4px}
+.ui2-collapsible>.ui2-section-body{display:block}
+.ui2-collapsible.ui2-collapsed>.ui2-section-body{display:none}
+.ui2-collapsible.ui2-collapsed{padding-bottom:10px!important;margin-bottom:10px!important}
+.ui2-mobile-preview-label{display:none}
+.ui2-focus-bar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 12px;padding:10px;border:1px solid var(--ui2-border);border-radius:15px;background:rgba(255,255,255,.022)}
+.ui2-focus-bar .btn{min-height:42px;margin:0}
+.ui2-return-preview{position:fixed;right:14px;bottom:max(16px,env(safe-area-inset-bottom));z-index:1200;display:none;min-height:46px;padding:0 16px;border:1px solid rgba(216,171,77,.45);border-radius:999px;background:#d8ab4d;color:#17120a;font-weight:900;box-shadow:0 12px 32px rgba(0,0,0,.42);cursor:pointer;transform:translateY(18px);opacity:0;transition:opacity .18s ease,transform .18s ease}
+.ui2-return-preview.is-visible{display:block;opacity:1;transform:translateY(0)}
+body.ui2-compact .hero{display:none}
+body.ui2-compact .topbar{margin-bottom:8px}
+body.ui2-compact .studio-tabs{margin-top:0}
+@media(min-width:941px){body.ui2-ready .stage{position:sticky;top:12px;align-self:start;max-height:calc(100dvh - 24px);overflow:auto}.ui2-preview-fullscreen{max-height:none!important}.ui2-focus-bar{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:940px){
+ body.ui2-ready .workspace{display:flex!important;flex-direction:column!important}
+ body.ui2-ready .stage{order:1!important;width:100%;scroll-margin-top:8px}
+ body.ui2-ready .controls{order:2!important;width:100%}
+ .ui2-mobile-preview-label{display:flex;align-items:center;justify-content:space-between;margin:0 0 8px;padding:9px 12px;border:1px solid rgba(216,171,77,.28);border-radius:12px;background:rgba(216,171,77,.07);color:#f1d59e;font-size:.78rem;font-weight:850}
+ body.ui2-ready .preview-panel{padding:10px!important}
+ body.ui2-ready .preview-head{position:sticky;top:0;z-index:5;margin:-2px -2px 8px!important;padding:7px!important;border-radius:12px;background:rgba(12,17,23,.95);backdrop-filter:blur(14px)}
+ .ui2-preview-actions{gap:4px}
+ .ui2-preview-btn{min-width:36px;height:36px;padding:0 8px;font-size:.78rem}
+ .ui2-zoom-value{display:none}
+ body.ui2-ready .preview-graphic-toolbar,body.ui2-ready .preview-theme-toolbar{margin:7px 0!important}
+ body.ui2-ready .preview-theme-options{margin-bottom:8px!important}
+}
+@media(max-width:640px){
+ body.ui2-ready .app{padding:5px!important}
+ body.ui2-ready .topbar{border-radius:16px;padding:10px!important}
+ body.ui2-ready .brand-copy small{display:none}
+ body.ui2-ready .hero{padding:16px;border-radius:17px}
+ body.ui2-ready .hero h1{font-size:1.45rem!important;line-height:1.12}
+ body.ui2-ready .hero p{font-size:.82rem!important;line-height:1.5}
+ body.ui2-ready .studio-tabs{position:sticky!important;top:0!important;z-index:40!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ body.ui2-ready .studio-tab{font-size:.68rem!important;padding:9px 3px!important}
+ body.ui2-ready .preview-graphic-toolbar,body.ui2-ready .preview-theme-toolbar{grid-template-columns:44px minmax(0,1fr) 44px!important;gap:6px!important}
+ body.ui2-ready .preview-graphic-toolbar button,body.ui2-ready .preview-theme-toolbar button{width:44px!important;height:44px!important;border-radius:12px!important}
+ body.ui2-ready .preview-theme-options{display:flex!important;flex-wrap:wrap;gap:6px!important;font-size:.72rem}
+ body.ui2-ready .selector-caption{font-size:.62rem!important}
+ body.ui2-ready .canvas-wrap{padding:5px!important;max-height:68dvh}
+ body.ui2-ready .controls{padding:10px!important}
+ body.ui2-ready .section{padding:12px!important;border:1px solid var(--ui2-border);border-radius:16px;background:rgba(255,255,255,.018)}
+ .ui2-focus-bar{position:sticky;top:58px;z-index:32;background:rgba(12,17,23,.96);backdrop-filter:blur(12px)}
+ .ui2-focus-bar .btn{font-size:.72rem;padding:8px 5px}
+ .ui2-mobile-preview-label span:last-child{font-size:.68rem;font-weight:700}
+}
+@media(prefers-reduced-motion:reduce){body.ui2-ready #previewCanvas,.ui2-return-preview,.studio-tab{transition:none!important;scroll-behavior:auto!important}}
