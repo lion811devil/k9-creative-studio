@@ -1,0 +1,16 @@
+K9 CREATIVE STUDIO 1.1.1 — CONSOLIDAMENTO
+
+Sostituire nella repository i file contenuti mantenendo le stesse cartelle.
+
+Correzioni principali:
+- un solo renderer attivo (quello completo in js/app.js)
+- trascinamento più affidabile e selezione per area realmente toccata
+- rendering durante il trascinamento limitato e rendering finale obbligatorio
+- quadranti con adattamento tipografico per mostrare tutte le righe disponibili
+- listener duplicati rimossi per i controlli principali
+- Brand Kit collegato al comando reale di generazione
+- tema PWA realmente chiaro e colorato
+- interfaccia mobile semplificata
+- versione uniforme 1.1.1
+
+Dopo il caricamento, aprire l'app e accettare l'aggiornamento della PWA. Se resta la vecchia grafica, chiudere completamente l'app e riaprirla.

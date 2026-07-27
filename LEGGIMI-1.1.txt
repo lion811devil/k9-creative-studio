@@ -1,0 +1,16 @@
+K9 CREATIVE STUDIO 1.1
+
+File da sostituire nella repository:
+- index.html
+- js/app.js
+- css/ui-2.css
+- manifest.webmanifest
+- sw.js
+
+Novità principali:
+- selezione diretta degli elementi sulla locandina
+- trascinamento di titolo, sottotitolo, pannello contenuti, CTA, badge, footer e loghi
+- contorno azzurro dell’elemento selezionato
+- testi nei quadranti non più limitati a due righe
+- interfaccia chiara e colorata
+- cache PWA 1.1.0
