@@ -1,0 +1,78 @@
+{
+  "id": "./",
+  "name": "K9 Creative Studio",
+  "short_name": "K9 Studio",
+  "description": "Crea ed esporta locandine professionali direttamente da smartphone.",
+  "lang": "it-IT",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#0b0d10",
+  "theme_color": "#0b0d10",
+  "categories": [
+    "design",
+    "business",
+    "productivity",
+    "photo"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuovo progetto",
+      "short_name": "Nuovo",
+      "description": "Apri K9 Creative Studio per creare una nuova locandina",
+      "url": "./?azione=nuovo",
+      "icons": [
+        {
+          "src": "./icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Centro social",
+      "short_name": "Social",
+      "description": "Apri il Centro pubblicazione social",
+      "url": "./?sezione=social",
+      "icons": [
+        {
+          "src": "./icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.1"
+}
