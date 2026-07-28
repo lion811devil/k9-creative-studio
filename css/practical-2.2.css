@@ -1,0 +1,27 @@
+/* K9 Creative Studio 2.2 — interfaccia pratica */
+.legacy-hidden,.compat-hidden{display:none!important}
+.quick-guide{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 14px;padding:8px 12px;max-width:720px;font-size:.78rem;font-weight:800;letter-spacing:.02em;color:var(--muted,#61717a)}
+.quick-guide i{display:block;width:28px;height:1px;background:currentColor;opacity:.35}
+.studio-tabs{grid-template-columns:repeat(3,minmax(0,1fr))!important;max-width:720px;margin-inline:auto}
+.studio-tab{min-height:46px}
+.hero{padding-bottom:12px!important}.hero p{max-width:760px}
+[data-panel="graphics"] .controls>.section:first-child,[data-panel="graphics"] .controls>.section:nth-child(2){padding:16px}
+[data-panel="graphics"] .workspace{gap:14px}
+.multi-logo-manager{padding:12px!important}
+.multi-logo-manager .section-title{margin-bottom:8px!important}
+.content-layout{grid-template-columns:minmax(0,1fr)!important;max-width:920px;margin-inline:auto}
+.content-editor{max-width:none!important}
+.export-layout{grid-template-columns:1fr!important;max-width:920px;margin-inline:auto}
+.export-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+#exportWebp{display:none!important}
+@media(max-width:760px){
+ .hero{padding:14px 12px 8px!important}.hero h1{font-size:1.45rem!important}.hero p{font-size:.87rem!important}
+ .quick-guide{font-size:.68rem;gap:6px;padding:5px}.quick-guide i{width:12px}
+ .studio-tabs{position:sticky;top:0;z-index:50;background:var(--bg,#f5f7f8);padding:6px}
+ .studio-tab{font-size:.82rem;padding:8px 5px}
+ [data-panel="graphics"] .workspace{display:flex!important;flex-direction:column!important}
+ [data-panel="graphics"] .stage{order:-1}
+ .preview-panel{position:relative!important;top:auto!important}
+ .two{grid-template-columns:1fr!important}
+ .export-grid{grid-template-columns:1fr!important}
+}

@@ -1,0 +1,30 @@
+/* K9 Creative Engine 2.0 — interfaccia essenziale e orientata ai modelli */
+:root{--ce-blue:#176b87;--ce-teal:#168b7b;--ce-orange:#ff8a16;--ce-violet:#7357b8;--ce-ink:#173042;--ce-soft:#eef7fa}
+.hero{display:none!important}
+.preview-theme-options{display:none!important}
+.selector-caption{font-size:.76rem!important;letter-spacing:.09em!important;color:#537083!important;margin-top:14px!important}
+.preview-graphic-toolbar,.preview-theme-toolbar{background:#fff!important;border:1px solid #d7e6ed!important;box-shadow:0 8px 24px rgba(23,107,135,.08)!important}
+.preview-graphic-info,.preview-theme-info{background:linear-gradient(135deg,#12384b,#18242f)!important}
+.preview-graphic-name,.preview-theme-name{color:#fff!important}
+.preview-graphic-counter,.preview-theme-counter{color:#b8cad3!important}
+.preview-graphic-toolbar>button,.preview-theme-toolbar>button{background:linear-gradient(145deg,var(--ce-blue),var(--ce-teal))!important;color:#fff!important;border:0!important}
+.preview-panel{background:linear-gradient(180deg,#fff,#f5fbfd)!important}
+.canvas-wrap{background:linear-gradient(135deg,#dff2f7,#fff3df)!important;padding:10px!important}
+.design-canvas{box-shadow:0 14px 30px rgba(15,54,72,.18)!important}
+.section{border:1px solid #dbe8ee!important;box-shadow:0 8px 24px rgba(19,66,88,.06)!important}
+.section-title .num{background:linear-gradient(145deg,#ffb23f,var(--ce-orange))!important}
+.field label{color:var(--ce-ink)!important}
+.field .hint,.safe-note{color:#607887!important}
+#style,#styleMode,#type,#discipline,#objective,#audience{background:#fff!important;color:#173042!important;border:1px solid #c9dbe4!important}
+.btn.primary,#generate{background:linear-gradient(135deg,var(--ce-orange),#ff6f00)!important;color:#151515!important}
+.fine-tune,.multi-logo-manager,.all-scale-controls{background:#f7fbfd!important;color:var(--ce-ink)!important;border:1px solid #d5e5ec!important}
+.fine-tune label,.multi-logo-manager label,.all-scale-controls label{color:var(--ce-ink)!important}
+.preview-head h2{font-size:1rem!important;color:var(--ce-ink)!important}
+@media(max-width:760px){
+ .topbar{margin-bottom:6px!important}.brand-copy small{font-size:.82rem!important}
+ .studio-tabs{gap:5px!important;padding:6px!important}.studio-tab{min-height:52px!important;font-size:.9rem!important;padding:8px 5px!important}
+ .workspace{gap:10px!important}.preview-panel{padding:10px!important}.canvas-wrap{padding:6px!important}
+ .preview-graphic-toolbar,.preview-theme-toolbar{min-height:66px!important}
+ .preview-graphic-toolbar>button,.preview-theme-toolbar>button{width:58px!important;min-width:58px!important}
+ .section{padding:14px!important}.two{grid-template-columns:1fr!important}
+}
